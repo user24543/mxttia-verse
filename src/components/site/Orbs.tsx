@@ -22,19 +22,19 @@ export function Orbs() {
             top: s.y,
             background: `radial-gradient(circle at 35% 35%, ${s.c}, transparent 70%)`,
           }}
-          animate={reduce ? undefined : { y: [0, -40, 0], x: [0, 24, 0], scale: [1, 1.08, 1] }}
+          animate={reduce ? {} : { y: [0, -40, 0], x: [0, 24, 0], scale: [1, 1.08, 1] }}
           transition={{ duration: s.d, repeat: Infinity, ease: "easeInOut" }}
         />
       ))}
       <motion.div
         className="absolute left-[8%] top-[58%] h-28 w-28 border border-primary/25"
         style={{ transformStyle: "preserve-3d" }}
-        animate={reduce ? undefined : { rotateX: 360, rotateY: 360 }}
+        animate={reduce ? {} : { rotateX: 360, rotateY: 360 }}
         transition={{ duration: 46, repeat: Infinity, ease: "linear" }}
       />
       <motion.div
         className="absolute right-[10%] top-[22%] h-20 w-20 rounded-full border border-accent/30"
-        animate={reduce ? undefined : { rotate: 360, scale: [1, 1.25, 1] }}
+        animate={reduce ? {} : { rotate: 360, scale: [1, 1.25, 1] }}
         transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
       />
     </div>
