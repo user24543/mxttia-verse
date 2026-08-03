@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { Orbs } from "@/components/site/Orbs";
 import { Reveal, SectionLabel } from "@/components/site/Reveal";
 import { TIMELINE, TOOLS } from "@/data/works";
-import profile from "@/assets/profile.png.asset.json";
+import profile from "@/assets/profile.png";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
